@@ -251,7 +251,7 @@ function loadInventory() {
 	   dataType: 'json',
 	   success: function(data) {
 		   var tableBody = $('#inventoryTable tbody');
-		   tableBody.empty(); // Clear existing rows
+		   tableBody.empty(); 
 		   data.forEach(function(item) {
 			   var row = '<tr>' +
 				   '<td>' + item.id + '</td>' +
@@ -283,7 +283,7 @@ function loadInventory() {
 	   },
 	   success: function(response) {
 		   alert('Item added successfully!');
-		   loadInventory(); // Refresh the inventory list
+		   loadInventory(); 
 		   $('#itemName').val('');
 		   $('#itemCategory').val('');
 		   $('#itemPrice').val('');
